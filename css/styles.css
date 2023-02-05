@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --soft_blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very_dark_blue_main_BG: hsl(217, 54%, 11%);
+    --very_dark_blue_card_BG: hsl(216, 50%, 16%);
+    --very_dark_blue_line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 14px;
+    font-family: 'Outfit', sans-serif;
+    color: #ababbe;
+    font-weight: 300;
+    margin-bottom: 16px;
+}
+
+body {
+    background-color: var(--very_dark_blue_main_BG);
+}
+
+main {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.product_image {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+picture {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.product_card {
+    background-color: var(--very_dark_blue_card_BG);
+    margin: 0 auto;
+    max-width: 80vw;
+    max-height: 85vh;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product_title {
+    font-family: 'Outfit', sans-serif;
+    color: var(--white);
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+hr {
+    /*border-color: var(--very_dark_blue_line);*/
+    border: 1px solid var(--very_dark_blue_line);;
+}
+
+.ex_prop {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+span {
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+#ethPrice {
+    color: var(--cyan);
+}
+
+#daysLeft {
+    color: #ababbe;
+}
+
+.flex_n_align_center {
+    display: flex;
+    align-items: center;
+}
+
+.gap_1 {
+    gap: 8px;
+}
+.creator {
+    margin-top: 16px ;
+}
+
+.creator img {
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 2.1rem;
+    margin-right: 16px;
+}
+.creator span {
+    font-weight: 400;
+}
+
+#creationOf {
+    color: #ababbe;
+}
+
+@media (min-width: 578px) {
+    .product_card {
+        max-width: 60vw;
+    }
+}
+@media (min-width: 842px) {
+    .product_card {
+        max-width: 35vw;
+    }
+}
+@media (min-width: 1140px) {
+  .product_card {
+      max-width: 20vw;
+  }
+}
+
